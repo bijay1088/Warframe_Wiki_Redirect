@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Warframe Wiki Redirector",
+    "version": "1.0",
+    "description": "This is an extension that redirects you to official wiki when opening fandom wiki for warframe.",
+    "permissions": [
+        "webRequest", 
+        "webRequestBlocking",
+        "http://warframe.fandom.com/*",
+        "https://warframe.fandom.com/*"
+    ],
+    "host_permissions": ["*://warframe.fandom.com/wiki/*"],
+    "background": {
+        "service_worker": "wiki_warframe.js"
+    }
+  }
+  
